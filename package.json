@@ -1,0 +1,27 @@
+{
+  "name": "lemonade.technical.exercise",
+  "version": "1.0.0",
+  "description": "Lemonade Technical Exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/xabeebod/L.git"
+  },
+  "keywords": [
+    "lemonade",
+    "technical",
+    "test"
+  ],
+  "author": "Xavi Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xabeebod/L/issues"
+  },
+  "homepage": "https://github.com/xabeebod/L#readme",
+  "devDependencies": {
+    "cypress": "^9.6.0"
+  }
+}
