@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-04-26T15:54:43.129Z",
+    "end": "2022-04-26T15:54:50.558Z",
+    "duration": 7429,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b2e867d0-b424-4092-9c6e-44fcf765bb4c",
+      "title": "",
+      "fullFile": "cypress/integration/lemonade.tests.spec.js",
+      "file": "cypress/integration/lemonade.tests.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0d1b46dd-4e72-4c34-b3bb-a91fee689006",
+          "title": "Vendor Search",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "bb43846b-3652-478a-ba4e-d780e97653d0",
+              "title": "UserBundle/Desktop/Users/UserMenu",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "\"Before you continue to Google Search\" disclaimer is shown on first visit",
+                  "fullTitle": "Vendor Search UserBundle/Desktop/Users/UserMenu \"Before you continue to Google Search\" disclaimer is shown on first visit",
+                  "timedOut": null,
+                  "duration": 2296,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('#S3BnEe').should('be.visible'); // check if element which the message \"Before you continue to Google Search\" is shown\n// this looks te be valid for any language",
+                  "err": {},
+                  "uuid": "0703beba-dc41-44eb-b9a4-269e13641a8a",
+                  "parentUUID": "bb43846b-3652-478a-ba4e-d780e97653d0",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Google main page is shown as we accept the disclaimer",
+                  "fullTitle": "Vendor Search UserBundle/Desktop/Users/UserMenu Google main page is shown as we accept the disclaimer",
+                  "timedOut": null,
+                  "duration": 1360,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('[class=\"QS5gu sy4vM\"]').eq(1).click(); // click \"Accept\"\ncy.get('img[class=\"lnXdpd\"]').should('be.visible'); // double check, by class\ncy.get('img[alt=\"Google\"]').should('be.visible'); // and by alt",
+                  "err": {},
+                  "uuid": "c7622266-e985-42b6-a806-69d3338478e7",
+                  "parentUUID": "bb43846b-3652-478a-ba4e-d780e97653d0",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Search field can be X as something is typed",
+                  "fullTitle": "Vendor Search UserBundle/Desktop/Users/UserMenu Search field can be X as something is typed",
+                  "timedOut": null,
+                  "duration": 1557,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('[class=\"QS5gu sy4vM\"]').eq(1).click(); // click \"Accept\"\ncy.get('.gLFyf').type('1234'); // type something\ncy.get('.ExCKkf > svg').click(); // click delete X\ncy.get('.gLFyf').should('be.empty'); // check it gets empty",
+                  "err": {},
+                  "uuid": "fa043080-49de-48bd-88e1-31583cfacca5",
+                  "parentUUID": "bb43846b-3652-478a-ba4e-d780e97653d0",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "0703beba-dc41-44eb-b9a4-269e13641a8a",
+                "c7622266-e985-42b6-a806-69d3338478e7",
+                "fa043080-49de-48bd-88e1-31583cfacca5"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 5213,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

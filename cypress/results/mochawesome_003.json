@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-04-26T17:28:20.577Z",
+    "end": "2022-04-26T17:28:29.041Z",
+    "duration": 8464,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cd6c945d-bb28-40e4-84aa-a54d3754810f",
+      "title": "",
+      "fullFile": "cypress/integration/lemonade.tests.spec.js",
+      "file": "cypress/integration/lemonade.tests.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7a8bd397-c4ae-4943-b4ae-047bbf88daed",
+          "title": "Lemonade Technical Exrcise",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "b9fa2959-36ba-4c59-aa5f-cc8e8fc680b1",
+              "title": "UserBundle/Desktop/Users/UserMenu",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "\"Before you continue to Google Search\" disclaimer is shown on first visit",
+                  "fullTitle": "Lemonade Technical Exrcise UserBundle/Desktop/Users/UserMenu \"Before you continue to Google Search\" disclaimer is shown on first visit",
+                  "timedOut": null,
+                  "duration": 2144,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('#S3BnEe').should('be.visible'); // check if element which the message \"Before you continue to Google Search\" is shown\n// this looks te be valid for any language",
+                  "err": {},
+                  "uuid": "7e78b6a7-0990-4835-8aa5-b1841b4a9c07",
+                  "parentUUID": "b9fa2959-36ba-4c59-aa5f-cc8e8fc680b1",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Google main page is shown as we accept the disclaimer",
+                  "fullTitle": "Lemonade Technical Exrcise UserBundle/Desktop/Users/UserMenu Google main page is shown as we accept the disclaimer",
+                  "timedOut": null,
+                  "duration": 1231,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('[class=\"QS5gu sy4vM\"]').eq(1).click(); // click \"Accept\"\ncy.get('img[class=\"lnXdpd\"]').should('be.visible'); // double check, by class\ncy.get('img[alt=\"Google\"]').should('be.visible'); // and by alt",
+                  "err": {},
+                  "uuid": "bca2e317-c8cd-40c4-aa5c-f2001e289f99",
+                  "parentUUID": "b9fa2959-36ba-4c59-aa5f-cc8e8fc680b1",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Search field can be X as something is typed",
+                  "fullTitle": "Lemonade Technical Exrcise UserBundle/Desktop/Users/UserMenu Search field can be X as something is typed",
+                  "timedOut": null,
+                  "duration": 2881,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('[class=\"QS5gu sy4vM\"]').eq(1).click(); // click \"Accept\"\ncy.get('.gLFyf').type('1234'); // type something\ncy.get('.ExCKkf > svg').click(); // click delete X\ncy.get('.gLFyf').should('be.empty'); // check it gets empty",
+                  "err": {},
+                  "uuid": "0da4a869-e3aa-457c-b24b-3eab14a99fc6",
+                  "parentUUID": "b9fa2959-36ba-4c59-aa5f-cc8e8fc680b1",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "7e78b6a7-0990-4835-8aa5-b1841b4a9c07",
+                "bca2e317-c8cd-40c4-aa5c-f2001e289f99",
+                "0da4a869-e3aa-457c-b24b-3eab14a99fc6"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 6256,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
